@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ULTRA TOP UP .COM - Pro Level Hosting | Domain & Hosting BD</title>
-<meta name="description" content="ULTRA TOP UP .COM - Auto Domain. .xyz 200 Tk, .shop 300 Tk, .com 400 Tk. bKash Nagad diye kinun.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500;700;800&display=swap" rel="stylesheet">
 <style>body{font-family:'Hind Siliguri',sans-serif;background:#f0f4ff}.hide{display:none!important}</style>
@@ -13,14 +12,17 @@
 
 <div class="bg-[#0a1931] text-white px-3 py-2 flex justify-between items-center sticky top-0 z-50">
 <p class="font-black text-[13px]">ULTRA <span class="text-[#00ff00]">TOP UP .COM</span></p>
+<div class="flex gap-1">
 <button onclick="showPage('my')" class="bg-white/15 px-2.5 py-1.5 rounded-full text-[11px] font-bold">📦 My Domain</button>
+<button onclick="openAccount()" class="bg-yellow-400 text-black px-2.5 py-1.5 rounded-full text-[11px] font-black">👤 <span id="topUser">Login</span></button>
+</div>
 </div>
 
 <div id="page-home">
 <div class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] p-5 text-center text-white">
 <p class="text-[11px] tracking-widest text-[#00ff00] font-bold">● AUTO ROBOT SYSTEM - PRO LEVEL HOSTING</p>
 <p class="font-black text-[28px] leading-[1.1] mt-2">Domain + Hosting<br><span class="text-yellow-300">অটো ডেলিভারি ১ মিনিটে</span></p>
-<p class="text-[12px] opacity-80 mt-2">WhatsApp লাগবে না। ওয়েবসাইটেই পেমেন্ট করো, রোবট অটো ডোমেইন দিবে।</p>
+<p class="text-[12px] opacity-80 mt-2">আগে একাউন্ট খুলো, তারপর কিনো। তোমার সব ডোমেইন My Account এ থাকবে।</p>
 <div class="bg-white rounded-[18px] p-3 mt-4 text-black">
 <p class="font-black text-left text-[14px]">🔍 তোমার পছন্দের Domain খুঁজো</p>
 <div class="flex gap-2 mt-2">
@@ -51,55 +53,83 @@
 <p class="font-black text-center text-[18px] mt-4">🔥 Hosting Plan - Pro Level</p>
 <div class="p-2.5 space-y-3 mt-1">
 <div class="bg-white rounded-[20px] border-2 border-gray-200 p-4">
-<div class="flex justify-between"><p class="font-black">Starter</p><span class="bg-gray-100 px-2 py-1 rounded-full text-[11px] font-bold">ছোট সাইটের জন্য</span></div>
-<p class="mt-2"><span class="font-black text-[26px]">১০০ Tk</span><span class="text-gray-500 text-[12px]"> / মাস</span> <s class="text-red-500 text-[12px]">২০০ Tk</s></p>
-<ul class="text-[13px] mt-2 space-y-1 text-gray-700"><li>✅ 1 Website</li><li>✅ 5 GB SSD Storage</li><li>✅ Free SSL Certificate</li><li>✅ Vercel / WordPress Setup</li></ul>
-<button onclick="buyNow('Starter Hosting',100)" class="bg-black text-white w-full py-3.5 rounded-xl font-black mt-3">🛒 Starter কিনো - bKash / Nagad</button>
+<p class="font-black">Starter - ১০০ Tk / মাস</p>
+<ul class="text-[13px] mt-2 text-gray-700"><li>✅ 1 Website</li><li>✅ 5 GB SSD</li><li>✅ Free SSL</li></ul>
+<button onclick="buyNow('Starter Hosting',100)" class="bg-black text-white w-full py-3.5 rounded-xl font-black mt-3">🛒 Starter কিনো</button>
 </div>
-<div class="bg-white rounded-[20px] border-2 border-[#00c853] p-4 relative shadow-lg">
+<div class="bg-white rounded-[20px] border-2 border-[#00c853] p-4 relative">
 <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#00c853] text-white px-3 py-1 rounded-full text-[11px] font-black">🔥 MOST POPULAR</span>
-<div class="flex justify-between mt-1"><p class="font-black">Business Pro</p><span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-[11px] font-bold">সবচেয়ে বেশি নেয়</span></div>
-<p class="mt-2"><span class="font-black text-[26px]">২০০ Tk</span><span class="text-gray-500 text-[12px]"> / মাস</span> <s class="text-red-500 text-[12px]">৪৫০ Tk</s></p>
-<ul class="text-[13px] mt-2 space-y-1 text-gray-700"><li>✅ 5 Website</li><li>✅ 20 GB SSD Storage</li><li>✅ Free SSL + Free Domain Setup</li><li>✅ Unlimited Bandwidth</li></ul>
+<p class="font-black mt-1">Business Pro - ২০০ Tk / মাস</p>
+<ul class="text-[13px] mt-2 text-gray-700"><li>✅ 5 Website</li><li>✅ 20 GB SSD</li><li>✅ Free SSL + Setup</li></ul>
 <button onclick="buyNow('Business Pro Hosting',200)" class="bg-[#00c853] text-white w-full py-3.5 rounded-xl font-black mt-3">🛒 Business Pro কিনো</button>
 </div>
 <div class="bg-gradient-to-br from-purple-600 to-blue-600 rounded-[20px] p-4 text-white">
-<div class="flex justify-between"><p class="font-black">ULTRA Pro</p><span class="bg-white text-purple-700 px-2 py-1 rounded-full text-[11px] font-black">PRO LEVEL</span></div>
-<p class="mt-2"><span class="font-black text-[26px]">৫০০ Tk</span><span class="text-white/70 text-[12px]"> / মাস</span> <s class="text-yellow-300 text-[12px]">১০০০ Tk</s></p>
-<ul class="text-[13px] mt-2 space-y-1"><li>✅ Unlimited Website</li><li>✅ 100 GB SSD Storage</li><li>✅ Free .com Domain 1 Year</li><li>✅ Daily Backup + Speed Boost</li></ul>
+<p class="font-black">ULTRA Pro - ৫০০ Tk / মাস</p>
+<ul class="text-[13px] mt-2"><li>✅ Unlimited Website</li><li>✅ 100 GB SSD</li><li>✅ Free .com Domain</li></ul>
 <button onclick="buyNow('ULTRA Pro Hosting',500)" class="bg-white text-purple-700 w-full py-3.5 rounded-xl font-black mt-3">🛒 ULTRA Pro কিনো</button>
 </div>
 </div>
 
 <div class="bg-white rounded-[20px] mx-2.5 p-4 border mt-2">
-<p class="font-black">💰 Domain Price List - Auto Delivery</p>
+<p class="font-black">💰 Domain Price List</p>
 <div class="mt-2 text-[13px] space-y-2">
 <div class="flex justify-between border-b pb-2"><span><b>.xyz</b> - 1 Year</span><b>200 Tk</b> <button onclick="buyDomainDirect('xyz')" class="bg-[#6a00ff] text-white px-3 py-1 rounded-full text-[11px]">কিনো</button></div>
 <div class="flex justify-between border-b pb-2"><span><b>.shop</b> - 1 Year</span><b>300 Tk</b> <button onclick="buyDomainDirect('shop')" class="bg-[#6a00ff] text-white px-3 py-1 rounded-full text-[11px]">কিনো</button></div>
 <div class="flex justify-between border-b pb-2"><span><b>.com</b> - 1 Year</span><b>400 Tk</b> <button onclick="buyDomainDirect('com')" class="bg-[#6a00ff] text-white px-3 py-1 rounded-full text-[11px]">কিনো</button></div>
 <div class="flex justify-between"><span><b>.net</b> - 1 Year</span><b>400 Tk</b> <button onclick="buyDomainDirect('net')" class="bg-[#6a00ff] text-white px-3 py-1 rounded-full text-[11px]">কিনো</button></div>
 </div>
-<p class="text-[11px] text-gray-500 mt-3">bKash: 01837450067 | Nagad: 01636487523 - Send Money করে TrxID দিলেই রোবট Active করে দিবে।</p>
+<p class="text-[11px] text-gray-500 mt-3">bKash: 01837450067 | Nagad: 01636487523</p>
 </div>
-
 <div class="bg-[#0a1931] text-white mx-2.5 mt-3 rounded-[20px] p-4">
-<p class="font-black text-[16px]">🤖 অটো রোবট কেমনে কাজ করে? - ৩ স্টেপ</p>
-<p class="text-[13px] mt-2 leading-6">1️⃣ Domain / Hosting পছন্দ করে <b>কিনো</b> চাপো<br>2️⃣ bKash: <b class="text-yellow-300">01837450067</b> / Nagad: <b class="text-yellow-300">01636487523</b> এ টাকা পাঠাও<br>3️⃣ TrxID দাও, রোবট ১ মিনিটে Active করে দিবে - My Domain এ দেখবা</p>
-<p class="text-center text-[11px] opacity-70 mt-3">Support: support@ultratopupbd.com | © ULTRA TOP UP .COM 2026</p>
+<p class="font-black">🤖 কেমনে কিনবা? - ৩ স্টেপ</p>
+<p class="text-[13px] mt-2 leading-6">1️⃣ উপরে 👤 Login এ চাপ দিয়ে একাউন্ট খুলো<br>2️⃣ bKash / Nagad এ টাকা পাঠাও<br>3️⃣ TrxID দাও, রোবট ১ মিনিটে Active করে দিবে</p>
+<p class="text-center text-[11px] opacity-70 mt-3">© ULTRA TOP UP .COM 2026</p>
 </div>
 </div>
 
 <div id="page-my" class="hide p-3">
 <p class="font-black text-[18px]">📦 আমার ডোমেইন</p>
+<p id="myUserInfo" class="text-[12px] text-gray-500"></p>
 <div id="myList" class="mt-3 space-y-2"></div>
 <button onclick="showPage('home')" class="bg-black text-white w-full py-3 rounded-xl font-black mt-3">Home এ যাও</button>
 </div>
 
+<!-- ACCOUNT MODAL -->
+<div id="accountModal" class="hide fixed inset-0 bg-black/70 z-[100] flex items-end">
+<div class="bg-white w-full rounded-t-[20px] p-4 max-h-[90vh] overflow-y-auto">
+<div id="loginForm">
+<p class="font-black text-[18px]">👤 My Account - Login</p>
+<p class="text-[12px] text-gray-500">লগইন করলে তোমার ডোমেইন দেখতে পারবা</p>
+<input id="loginPhone" type="text" placeholder="মোবাইল নাম্বার - 01XXXXXXXXX" class="w-full border-2 p-3 rounded-xl mt-3 font-bold">
+<input id="loginPass" type="password" placeholder="পাসওয়ার্ড" class="w-full border-2 p-3 rounded-xl mt-2 font-bold">
+<button onclick="doLogin()" class="bg-black text-white w-full py-3.5 rounded-xl font-black mt-3">Login করো</button>
+<p class="text-center text-[13px] mt-3">একাউন্ট নাই? <b onclick="showRegister()" class="text-purple-700 cursor-pointer">এখানে চাপ দিয়ে একাউন্ট খুলো</b></p>
+</div>
+<div id="registerForm" class="hide">
+<p class="font-black text-[18px]">✍️ নতুন একাউন্ট খুলো</p>
+<input id="regName" type="text" placeholder="তোমার নাম" class="w-full border-2 p-3 rounded-xl mt-3 font-bold">
+<input id="regPhone" type="text" placeholder="মোবাইল নাম্বার" class="w-full border-2 p-3 rounded-xl mt-2 font-bold">
+<input id="regPass" type="password" placeholder="পাসওয়ার্ড বানাও - যেমন 1234" class="w-full border-2 p-3 rounded-xl mt-2 font-bold">
+<button onclick="doRegister()" class="bg-[#00c853] text-white w-full py-3.5 rounded-xl font-black mt-3">✅ একাউন্ট খুলো</button>
+<p class="text-center text-[13px] mt-3">আগে একাউন্ট আছে? <b onclick="showLogin()" class="text-purple-700 cursor-pointer">Login করো</b></p>
+</div>
+<div id="loggedForm" class="hide">
+<p class="font-black text-[18px]">👋 <span id="accName"></span></p>
+<p class="text-[13px] text-gray-600" id="accPhone"></p>
+<p class="text-[13px] mt-2">তোমার মোট ডোমেইন: <b id="accCount">0</b></p>
+<button onclick="goMyDomain()" class="bg-[#6a00ff] text-white w-full py-3 rounded-xl font-black mt-3">📦 আমার ডোমেইন দেখো</button>
+<button onclick="doLogout()" class="bg-red-500 text-white w-full py-3 rounded-xl font-black mt-2">Logout</button>
+</div>
+<button onclick="closeAccount()" class="w-full py-2 text-gray-500 font-bold mt-1">বন্ধ করো</button>
+</div>
+</div>
+
+<!-- PAYMENT MODAL -->
 <div id="payModal" class="hide fixed inset-0 bg-black/70 z-[100] flex items-end">
 <div class="bg-white w-full rounded-t-[20px] p-4 max-h-[90vh] overflow-y-auto">
 <p class="font-black text-[16px]">💳 পেমেন্ট করো - <span id="payDomain"></span></p>
 <p class="text-[13px] mt-1">দাম: <b id="payPrice"></b></p>
-<div class="bg-pink-50 border border-pink-200 rounded-xl p-3 mt-3 text-[13px]">bKash Send Money:<br><b class="text-[16px]">01837450067</b><br><br>Nagad Send Money:<br><b class="text-[16px]">01636487523</b><br><span class="text-gray-500">একটায় টাকা পাঠিয়ে নিচে TrxID দাও</span></div>
+<div class="bg-pink-50 border border-pink-200 rounded-xl p-3 mt-3 text-[13px]">bKash: <b>01837450067</b><br>Nagad: <b>01636487523</b><br><span class="text-gray-500">Send Money করে নিচে TrxID দাও</span></div>
 <select id="payMethod" class="w-full border-2 p-3 rounded-xl mt-3 font-bold"><option value="bKash">bKash - 01837450067</option><option value="Nagad">Nagad - 01636487523</option></select>
 <input id="custName" type="text" placeholder="তোমার নাম" class="w-full border-2 p-3 rounded-xl mt-2 font-bold">
 <input id="custPhone" type="text" placeholder="তোমার মোবাইল নাম্বার" class="w-full border-2 p-3 rounded-xl mt-2 font-bold">
@@ -114,7 +144,7 @@
 <p class="text-[40px]">🎉</p>
 <p class="font-black text-[18px]">অভিনন্দন! রোবট ডোমেইন দিয়ে দিছে!</p>
 <p class="bg-green-50 border border-green-300 rounded-xl p-3 mt-3 font-black text-[16px]" id="successDomain"></p>
-<p class="text-[12px] mt-2 text-gray-600">Status: <span class="text-green-600 font-black">● ACTIVE</span> | Expiry: 1 Year<br>Nameserver: ns1.ultratopupbd.com</p>
+<p class="text-[12px] mt-2 text-gray-600">Status: <span class="text-green-600 font-black">● ACTIVE</span> | Expiry: 1 Year</p>
 <button onclick="closeSuccess()" class="bg-black text-white w-full py-3 rounded-xl font-black mt-3">📦 My Domain এ দেখো</button>
 </div>
 </div>
@@ -122,6 +152,12 @@
 <script>
 var prices={".xyz":200,".shop":300,".com":400,".net":400};
 var curDomain="", curPrice=0;
+function getUsers(){ return JSON.parse(localStorage.getItem('ultra_users')||'[]'); }
+function getCurrent(){ return JSON.parse(localStorage.getItem('ultra_current')||'null'); }
+function updateTop(){
+  var u=getCurrent();
+  document.getElementById('topUser').innerText = u ? u.name.split(' ')[0] : 'Login';
+}
 function showPage(p){
   document.getElementById('page-home').classList.add('hide');
   document.getElementById('page-my').classList.add('hide');
@@ -129,13 +165,54 @@ function showPage(p){
   if(p=='my'){ document.getElementById('page-my').classList.remove('hide'); renderMy(); }
   window.scrollTo(0,0);
 }
+function openAccount(){
+  var u=getCurrent();
+  document.getElementById('accountModal').classList.remove('hide');
+  document.getElementById('loginForm').classList.add('hide');
+  document.getElementById('registerForm').classList.add('hide');
+  document.getElementById('loggedForm').classList.add('hide');
+  if(u){
+    document.getElementById('loggedForm').classList.remove('hide');
+    document.getElementById('accName').innerText=u.name;
+    document.getElementById('accPhone').innerText='📱 '+u.phone;
+    var orders=JSON.parse(localStorage.getItem('ultra_orders')||'[]').filter(o=>o.phone==u.phone);
+    document.getElementById('accCount').innerText=orders.length;
+  } else {
+    document.getElementById('loginForm').classList.remove('hide');
+  }
+}
+function closeAccount(){ document.getElementById('accountModal').classList.add('hide'); }
+function showRegister(){ document.getElementById('loginForm').classList.add('hide'); document.getElementById('registerForm').classList.remove('hide'); }
+function showLogin(){ document.getElementById('registerForm').classList.add('hide'); document.getElementById('loginForm').classList.remove('hide'); }
+function doRegister(){
+  var name=document.getElementById('regName').value.trim();
+  var phone=document.getElementById('regPhone').value.trim();
+  var pass=document.getElementById('regPass').value.trim();
+  if(!name||!phone||!pass) return alert('৩টাই দাও ভাই - নাম, নাম্বার, পাসওয়ার্ড');
+  var users=getUsers();
+  if(users.find(x=>x.phone==phone)) return alert('এই নাম্বারে একাউন্ট আছে, Login করো ভাই');
+  users.push({name:name,phone:phone,pass:pass});
+  localStorage.setItem('ultra_users', JSON.stringify(users));
+  localStorage.setItem('ultra_current', JSON.stringify({name:name,phone:phone}));
+  updateTop(); alert('হইছে ভাই! একাউন্ট খুলে গেছে 🎉'); closeAccount(); showPage('home');
+}
+function doLogin(){
+  var phone=document.getElementById('loginPhone').value.trim();
+  var pass=document.getElementById('loginPass').value.trim();
+  var u=getUsers().find(x=>x.phone==phone && x.pass==pass);
+  if(!u) return alert('নাম্বার বা পাসওয়ার্ড ভুল ভাই!');
+  localStorage.setItem('ultra_current', JSON.stringify({name:u.name,phone:u.phone}));
+  updateTop(); alert('Welcome '+u.name+' ভাই!'); closeAccount(); showPage('my');
+}
+function doLogout(){ localStorage.removeItem('ultra_current'); updateTop(); closeAccount(); alert('Logout হইছে'); }
+function goMyDomain(){ closeAccount(); showPage('my'); }
 function searchDomain(){
   var name=document.getElementById('domainInput').value.trim().toLowerCase().replace(/[^a-z0-9-]/g,'');
   var ext=document.getElementById('domainExt').value;
   if(!name) return alert('Domain এর নাম লিখো ভাই');
   var full=name+ext; var price=prices[ext];
   var box=document.getElementById('domainResult'); box.classList.remove('hide');
-  box.innerHTML='<div class="bg-green-50 border-2 border-green-300 rounded-xl p-3"><p class="font-black text-green-700">✅ '+full+' খালি আছে!</p><p class="text-[13px]">দাম: <b>'+price+' Tk / বছর</b> - অটো ডেলিভারি</p><button onclick="buyNow(\''+full+'\','+price+')" class="bg-[#00c853] text-white w-full py-3 rounded-xl font-black mt-2">🛒 এখনই কিনো - '+price+' Tk</button></div>';
+  box.innerHTML='<div class="bg-green-50 border-2 border-green-300 rounded-xl p-3"><p class="font-black text-green-700">✅ '+full+' খালি আছে!</p><p class="text-[13px]">দাম: <b>'+price+' Tk / বছর</b></p><button onclick="buyNow(\''+full+'\','+price+')" class="bg-[#00c853] text-white w-full py-3 rounded-xl font-black mt-2">🛒 এখনই কিনো - '+price+' Tk</button></div>';
 }
 function buyDomainDirect(extShort){
   var name=prompt('Domain নাম লিখো - যেমন ultratopupbd'); if(!name) return;
@@ -146,6 +223,8 @@ function buyNow(full, price){
   curDomain=full; curPrice=price;
   document.getElementById('payDomain').innerText=curDomain;
   document.getElementById('payPrice').innerText=price+' Tk';
+  var u=getCurrent();
+  if(u){ document.getElementById('custName').value=u.name; document.getElementById('custPhone').value=u.phone; }
   document.getElementById('payModal').classList.remove('hide');
 }
 function closePay(){ document.getElementById('payModal').classList.add('hide'); }
@@ -164,11 +243,18 @@ function confirmPay(){
 }
 function closeSuccess(){ document.getElementById('successModal').classList.add('hide'); showPage('my'); }
 function renderMy(){
+  var u=getCurrent();
   var orders=JSON.parse(localStorage.getItem('ultra_orders')||'[]');
   var box=document.getElementById('myList');
+  if(!u){ document.getElementById('myUserInfo').innerText='লগইন করো নাই, নিচে সব অর্ডার দেখতেছো - লগইন করলে শুধু তোমারটা দেখবা'; }
+  else {
+    document.getElementById('myUserInfo').innerText='লগইন: '+u.name+' ('+u.phone+') - শুধু তোমার ডোমেইন দেখতেছো';
+    orders=orders.filter(o=>o.phone==u.phone);
+  }
   if(orders.length==0){ box.innerHTML='<p class="bg-white p-4 rounded-xl text-center text-gray-500">এখনো কোনো ডোমেইন নাই ভাই। উপরে থেকে কিনো।</p>'; return; }
   box.innerHTML=orders.map(o=>'<div class="bg-white rounded-xl p-3 border"><p class="font-black">'+o.domain+'</p><p class="text-[12px] text-gray-600">দাম: '+o.price+' Tk | '+o.method+' | Trx: '+o.trx+'<br>Status: <span class="text-green-600 font-black">● ACTIVE</span> | '+o.date+'</p></div>').join('');
 }
+updateTop();
 </script>
 </body>
 </html>
